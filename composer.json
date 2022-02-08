@@ -1,0 +1,35 @@
+{
+    "name": "bestony/mbdpay",
+    "description": "SDK for mbd.pub",
+    "type": "library",
+    "license": "MIT",
+    "keywords":["payment"],
+    "minimum-stability": "stable",
+    "homepage": "https://github.com/bestony/mbdpay",
+    "autoload": {
+        "psr-4": {
+            "Bestony\\Mbdpay\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "HuanCheng Bai",
+            "email": "bestony@linux.com",
+            "homepage": "https://www.ixiqin.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "xiqingongzi+mbd@gmail.com",
+        "wiki": "https://github.com/bestony/mbdpay/wiki",
+        "issues": "https://github.com/bestony/mbdpay/issues"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9",
+        "phpstan/phpstan": "^1.4"
+    },
+    "scripts": {
+        "test": "phpunit .",
+        "analyse": "phpstan analyse -c ./phpstan.neon"
+    }
+}
