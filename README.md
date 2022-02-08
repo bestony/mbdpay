@@ -45,7 +45,7 @@ composer test
 
 ## 更新日志
 
-请查看 [CHANGELOG](CHANGELOG.md) 了解更新信息。
+请查看 [CHANGELOG](../../releases) 了解更新信息。
 
 ## 参与贡献
 
