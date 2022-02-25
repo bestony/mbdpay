@@ -55,7 +55,8 @@ final class ClientTest extends TestCase
         $okResult = $this->client->wxH5pay([
             "description" => "testDescription",
             "out_trade_no" => "1234ajs".mt_rand(),
-            "amount_total" => 1
+            "amount_total" => 1,
+            "settle_time" => time(),
         ]);
         $this->assertArrayHasKey("h5_url", $okResult);
     }
@@ -66,7 +67,8 @@ final class ClientTest extends TestCase
             'description' => 'testDescription',
             'amount_total' => 1,
             'openid' => 123,
-            'callback_url' => 'https://www.baidu.com'
+            'callback_url' => 'https://www.baidu.com',
+            "settle_time" => time(),
         ]);
         $this->assertArrayHasKey('message', $failResult);
         $this->assertArrayHasKey('code', $failResult);
@@ -77,7 +79,8 @@ final class ClientTest extends TestCase
             'url' => "https://baidu.com",
             'description' => 'test-product',
             'amount_total' =>  1,
-            'callback_url' => "https://baidu.com"
+            'callback_url' => "https://baidu.com",
+            "settle_time" => time(),
         ]);
         $this->assertArrayHasKey("body",$okResult);
     }
