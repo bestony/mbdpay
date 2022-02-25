@@ -54,7 +54,7 @@ final class ClientTest extends TestCase
     public function testCanUseWXH5Pay(){
         $okResult = $this->client->wxH5pay([
             "description" => "testDescription",
-            "out_trade_no" => "1234ajs",
+            "out_trade_no" => "1234ajs".mt_rand(),
             "amount_total" => 1
         ]);
         $this->assertArrayHasKey("h5_url", $okResult);
