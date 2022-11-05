@@ -1,5 +1,8 @@
 # 面包多 Pay -  PHP SDK
-[![PHP Composer](https://github.com/bestony/mbdpay/actions/workflows/php.yml/badge.svg)](https://github.com/bestony/mbdpay/actions/workflows/php.yml)[![PHPStan Analyse](https://github.com/bestony/mbdpay/actions/workflows/stylecheck.yml/badge.svg)](https://github.com/bestony/mbdpay/actions/workflows/stylecheck.yml)
+[![PHPStan Analyse](https://github.com/bestony/mbdpay/actions/workflows/stylecheck.yml/badge.svg)](https://github.com/bestony/mbdpay/actions/workflows/stylecheck.yml)
+
+**由于面包多业务调整，此 SDK 已经失效，仅用作参考**
+
 ## 安装
 
 ### 使用 Composer 安装
